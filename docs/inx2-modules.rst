@@ -18,9 +18,9 @@ Orchard CMS로 사이트에 모듈을 설치하면 모듈에 하나 이상의 �
 .. toctree::
    :maxdepth: 2
    :glob:
-
-    modules/**
-
+   
+   modules/*
+   
   
 모듈 기능 활성화 및 비활성화 (Module Features)
 ----------------------------------------------------------
