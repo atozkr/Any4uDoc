@@ -18,7 +18,7 @@
 다운로드하여  설치하기 - github.com/atozkr/any4udocs
 ------------------------------------------------------
    
-`https://github.com/atozkr/any4udocs <https://github.com/atozkr/atoz>`_ **에서 소스를 다운로드 합니다.**
+`https://github.com/atozkr/any4udoc <https://github.com/atozkr/any4udoc>`_ **에서 소스를 다운로드 합니다.**
    
    
 압축을 풀면 "~/docs" 폴더가 있읍니다. ``conf.py`` 파일은 스핑크스 구성 설정 파일입니다.
