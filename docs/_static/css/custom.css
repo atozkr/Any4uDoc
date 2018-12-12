@@ -1,0 +1,9 @@
+blockquote {position: relative; width: 100%; background-color: #f2f2f2; padding: 5px; border-left: 1px solid #aaa;}
+blockquote > div:first-of-type { margin-left: 5px;}
+
+pre,blockquote{page-break-inside:avoid}
+blockquote{margin-left:24px;line-height:24px;margin-bottom:24px}
+
+em img {float: left; margin-right: 10px;}
+strong img {float: right;}
+blockquote u { color: blue;}
