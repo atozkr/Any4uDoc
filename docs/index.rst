@@ -20,6 +20,4 @@ Anys4u : 사용 설명서
 Indices and tables
 ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
