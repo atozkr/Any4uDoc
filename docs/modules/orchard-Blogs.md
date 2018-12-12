@@ -1,4 +1,4 @@
-# 블로그 -Blog
+### 블로그 -Blog
 
 오차드(Orchard)는 웹 사이트에 블로그를 쉽게 추가 할 수있는 블로그 엔진을 제공합니다.  사이트에 새 블로그를 생성하고 블로그에 게시물을 추가하는 방법에 대해 알아 봅니다.
 
@@ -14,7 +14,7 @@
 - Orchard.Autoroute
 
 
-## 블로그 모듈 기능 - Blog Module Features
+### 블로그 모듈 기능 - Blog Module Features
 
 Orchard Blogs 모듈은 기본적인 블로깅 기능을 구현합니다.
 
@@ -33,7 +33,7 @@ Orchard Blogs 모듈은 기본적인 블로깅 기능을 구현합니다.
 
 
 
-## 블로그 추가  - Add the Blog
+### 블로그 추가  - Add the Blog
 
 관리자(admin)로 로그인한 후 대시보드(Dashboard)에서 `블로그(Blog)` 하위 메뉴를 확장하십시오(처음인 경우엔 `블로그(Blog)` 메뉴를 클릭). 그런 다음 새 블로그를 클릭하십시오. 
 
@@ -43,7 +43,7 @@ Orchard Blogs 모듈은 기본적인 블로깅 기능을 구현합니다.
 > 새 블로그 화면에서 블로그의 제목, 설명 및 메뉴 텍스트를 추가하고 게시하기 버튼을 누르면 블로그 관리 페이지가 표시 됩니다.
  
 
-## 블로그 관리  - Managing The Blog
+### 블로그 관리  - Managing The Blog
  
 블로그를 추가하여 입력하고 게시하게 되면 블로그 관리 화면이 나타 납니다.
 
@@ -52,7 +52,7 @@ Orchard Blogs 모듈은 기본적인 블로깅 기능을 구현합니다.
 > <span class="info"><i class="fa fa-exclamation-circle" ></i> 참고</span> : <br />동일 사이트에 여러개의  블로그를 추가 할 수 있습니다.
  
  
-### 블로그 속성 (Blog Properties)
+#### 블로그 속성 (Blog Properties)
 
 블로그 속성을 수정하거나 삭제 합니다. 
 
@@ -61,7 +61,7 @@ Orchard Blogs 모듈은 기본적인 블로깅 기능을 구현합니다.
 > 블로그 이름(제목), 블로그개요(설명), 메뉴명 등을 수정하고 게시 할 수 있습니다.
 
 
-## 블로그 게시물 추가  - Add a post to the Blog
+### 블로그 게시물 추가  - Add a post to the Blog
 
 `새 포스트`를 클릭 하여 새 블로그 게시글 항목을 만듭니다. 새 포스트 화면이 표시되면 게시물의 제목과 게시물의 내용(본문)을 입력합니다
 
@@ -71,7 +71,7 @@ Orchard Blogs 모듈은 기본적인 블로깅 기능을 구현합니다.
 댓글를 달게 하려면  Check Show comments , Allow new comments and Allow threaded comments. Click Save to save it as a draft.
 
 
-### 샘플 블로그 관리  (Managing The Sample Blog)
+#### 샘플 블로그 관리  (Managing The Sample Blog)
 
 ![Add a post](../Media/images/modules/Orchard.blogs/05-manage-sampleblog.png)
 > 게시를 클릭하게 되면 화면에 '<span class="info">Blog Post이(가) 게시되었습니다. The Blog Post has been published.</span>' 메세지를 표시 합니다.
@@ -79,7 +79,7 @@ Orchard Blogs 모듈은 기본적인 블로깅 기능을 구현합니다.
 
  
  
-### 블로그 모듈  지원 (Blog Module Support)
+#### 블로그 모듈  지원 (Blog Module Support)
 
 문제가 있으면 알려 주시기 바랍니다.
 다음 주소에 메일 링리스트가 있습니다. project@google-groups.com
