@@ -16,7 +16,7 @@
 
  
 다운로드하여  설치하기 - github.com/atozkr/any4udocs
-------------------------------------------------------
+----------------------------------------------------------------
    
 `https://github.com/atozkr/any4udocs <https://github.com/atozkr/atoz>`_ **에서 소스를 다운로드 합니다.**
    
@@ -182,10 +182,10 @@
 		  
 ~/docs/_build/html 디렉토리에 index.htm 외 작성한 페이지가 생성 됩니다. index.html 파일를 열어 확인 합니다.
 	   
-___________________________________________________________________________________________________________________________
+___
 	   
 sphinx 설정을 초기화하여 설치
----------------------------------
+---------------------------------------
 
 '~/docs/' 디렉토리의 폴더및 파일을 삭제하거나 ``conf.py``, ``index.rst``, ``make.bat``, ``makefile`` 파일을 삭제하고 sphinx를 시작 합니다.
 
@@ -267,16 +267,10 @@ sphinx 설정을 초기화하여 설치
  
 
 참고 #
- 
-http://sphinx-doc.org/tutorial.html
-http://docutils.sourceforge.net/rst.html
-reST
-https://pythonhosted.org/an_example_pypi_project/sphinx.html
-http://docutils.sourceforge.net/docs/user/rst/quickref.html
-http://docutils.sourceforge.net/docs/user/rst/cheatsheet.txt
 
+- https://pythonhosted.org/an_example_pypi_project/sphinx.html
+- http://docutils.sourceforge.net/docs/user/rst/quickref.html
  
-https://veranostech.github.io/docs-korean-sphinx/doc/_build/html/markdown.html
-  
-https://www.sphinx-doc.org/en/master/usage/markdown.html
+- https://veranostech.github.io/docs-korean-sphinx/doc/_build/html/markdown.html  
+- https://www.sphinx-doc.org/en/master/usage/markdown.html
   
