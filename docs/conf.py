@@ -16,12 +16,16 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+import recommonmark
+from recommonmark.parser import CommonMarkParser
+from recommonmark.transform import AutoStructify
+
 
 # -- Project information -----------------------------------------------------
 
 project = u'Anys4u Documentation'
-copyright = u'2018, lims'
-author = u'lims'
+copyright = u'2018, atozkr'
+author = u'atozkr'
 
 # The short X.Y version
 version = u''
@@ -41,6 +45,11 @@ release = u'1.0'
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.imgmath',
+    'sphinx.ext.githubpages',
+    'sphinx.ext.napoleon',
+	'sphinx.ext.mathjax',
+	'sphinx.ext.viewcode',
+	'sphinx.ext.autosectionlabel',	
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -49,15 +58,19 @@ templates_path = ['_templates']
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
-from recommonmark.parser import CommonMarkParser
+# source_suffix = ['.rst', '.md']
+# source_suffix = '.rst'
 
-
-source_parsers = {
-'.md': 'recommonmark.parser.CommonMarkParser',
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.md': 'markdown',
 }
 
+source_parsers = {
+    
+	'.md': 'recommonmark.parser.CommonMarkParser',
+}
 source_suffix = ['.rst', '.md']
-# source_suffix = '.rst'
 
 # The master toctree document.
 master_doc = 'index'
@@ -78,13 +91,45 @@ exclude_patterns = [u'_build', 'Thumbs.db', '.DS_Store']
 pygments_style = None
 
 
+def setup(app):
+    app.add_stylesheet('css/custom.css')
+
+
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-# html_theme = 'alabaster'
+#html_theme = 'alabaster'
+
+import sphinx_rtd_theme
 html_theme = 'sphinx_rtd_theme'
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+
+html_theme_options = {
+    'canonical_url': '',
+    'analytics_id': '',
+    'logo_only': False,
+    'display_version': True,
+    'prev_next_buttons_location': 'bottom',
+    'style_external_links': False,
+    #'vcs_pageview_mode': '',
+    # Toc options
+    'collapse_navigation': True,
+    'sticky_navigation': True,
+    'navigation_depth': 3,
+    'includehidden': True,
+    'titles_only': False
+}
+
+html_context = {
+    "display_github": True,
+    "github_user": "atozkr",
+    "github_repo": project,
+    "github_version": "master",
+    "conf_py_path": "/",
+    "source_suffix": source_suffix,
+}
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -107,13 +152,11 @@ html_static_path = ['_static']
 #
 # html_sidebars = {}
 
-def setup(app):
-    app.add_stylesheet('css/custom.css')
 
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Anys4uCMSdoc'
+htmlhelp_basename = 'Anys4uDocumentationdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -140,8 +183,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'Anys4uCMS.tex', u'Anys4u CMS Documentation',
-     u'lims', 'manual'),
+    (master_doc, 'Anys4uDocumentation.tex', u'Anys4u Documentation Documentation',
+     u'atozkr', 'manual'),
 ]
 
 
@@ -150,7 +193,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'Anys4uCMS', u'Anys4u CMS Documentation',
+    (master_doc, 'anys4udocumentation', u'Anys4u Documentation Documentation',
      [author], 1)
 ]
 
@@ -161,8 +204,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'Anys4uCMS', u'Anys4u CMS Documentation',
-     author, 'Anys4uCMS', 'One line description of project.',
+    (master_doc, 'Anys4uDocumentation', u'Anys4u Documentation Documentation',
+     author, 'Anys4uDocumentation', 'One line description of project.',
      'Miscellaneous'),
 ]
 
